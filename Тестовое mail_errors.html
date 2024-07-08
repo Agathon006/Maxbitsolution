@@ -461,6 +461,7 @@
 
         a.btn,
         button.btn {
+            width: fit-content !important;
             display: inline-block;
             background: #ffffff;
             border-radius: 10px;
@@ -606,8 +607,6 @@
         button.btn {
             font-size: 14px !important;
             display: block !important;
-            border-left-width: 0px !important;
-            border-right-width: 0px !important;
         }
 
         .cs-btn-fw {
@@ -615,8 +614,8 @@
             text-align: center !important;
         }
 
-        .cs-menu td {
-            width: 1% !important;
+        .cs-menu td:not(:first-child) {
+            width: 33% !important;
         }
 
         .cs-adaptive table,
@@ -771,8 +770,8 @@
                                                                                 <tr>
                                                                                     <td class="csd-block-image cs-m-p0l cs-m-txt-c"
                                                                                         align="left"
-                                                                                        style="font-size:0"><a href="#"
-                                                                                            target="_blank"><img
+                                                                                        style="font-size:0; display: flex;justify-content: flex-start;">
+                                                                                        <a href="#" target="_blank"><img
                                                                                                 src="https://seeklogo.com/images/L/lorem-lorem-logo-EFC176EF00-seeklogo.com.png"
                                                                                                 alt
                                                                                                 style="display: block;"
@@ -794,7 +793,8 @@
                                                                 <tr>
                                                                     <td class="csd-block-button cs-p10t cs-m-txt-c"
                                                                         align="right">
-                                                                        <span>
+                                                                        <span
+                                                                            style="display: flex;justify-content: flex-end;">
                                                                             <a href="#" class="btn btn-border"
                                                                                 target="_blank">Lorem ipsum</a>
                                                                         </span>
@@ -899,7 +899,8 @@
                                     <td class="csd-structure cs-p10r cs-p10l"
                                         style="background-position: center center;" align="left">
                                         <!--[if mso]><table width="580" cellpadding="0" cellspacing="0"><tr><td width="199" valign="top"><![endif]-->
-                                        <table class="ft-left" cellspacing="0" cellpadding="0" align="left">
+                                        <table class="ft-left" cellspacing="0" cellpadding="0" align="left"
+                                            style="width: 60% !important;">
                                             <tbody>
                                                 <tr>
                                                     <td class="csd-container-frame" width="199" align="left">
@@ -909,8 +910,10 @@
                                                                 <tr>
                                                                     <td class="csd-block-text cs-p15t cs-m-txt-c"
                                                                         align="right">
-                                                                        <p style="font-size: 16px; color: #666666;">
+                                                                        <p
+                                                                            style="font-size: 16px;color: #666666;text-align: right;padding-right: 20px;">
                                                                             <strong>Dignissim:
+                                                                            </strong>
                                                                         </p>
                                                                     </td>
                                                                 </tr>
@@ -934,7 +937,8 @@
                                                                         <table class="cs-table-not-adapt cs-social"
                                                                             cellspacing="0" cellpadding="0">
                                                                             <tbody>
-                                                                                <tr>
+                                                                                <tr
+                                                                                    style="display: flex;align-items: center;">
                                                                                     <td class="cs-p10r" valign="top"
                                                                                         align="center"><a
                                                                                             target="_blank"
@@ -999,13 +1003,13 @@
                                                             <tbody>
                                                                 <tr>
                                                                     <td class="csd-block-text" align="center">
-                                                                        <p style="font-size: 14px;">Id diam maecenas: <a
-                                                                                target="_blank"
-                                                                                style="font-size: 14px; color: #666666;"
+                                                                        <p style="font-size: 14px !important;">Id diam
+                                                                            maecenas: <a target="_blank"
+                                                                                style="font-size: 14px !important; color: #666666;"
                                                                                 href="tel:123456789">123456789</a> | <a
                                                                                 target="_blank"
                                                                                 href="mailto:example@example.com"
-                                                                                style="font-size: 14px; color: #666666;">example@example.com</a>
+                                                                                style="font-size: 14px !important; color: #666666;">example@example.com</a>
                                                                         </p>
                                                                     </td>
                                                                 </tr>
@@ -1049,16 +1053,19 @@
                                                             </tr>
                                                             <tr>
                                                                 <td class="csd-block-text cs-p5b" align="left">
-                                                                    <p style="font-size: 14px; color: #333333;">
+                                                                    <p
+                                                                        style="font-size: 14px !important; color: #333333;">
                                                                         Faucibus turpis in eu mi bibendum neque egestas
                                                                         <a target="_blank"
-                                                                            style="font-size: 14px; color: #333333; text-decoration: none;">congue
+                                                                            style="font-size: 14px !important; color: #333333; text-decoration: none;">congue
                                                                             quisque</a>.
                                                                     </p>
-                                                                    <p style="font-size: 14px; color: #333333;">A
+                                                                    <p
+                                                                        style="font-size: 14px !important; color: #333333;">
+                                                                        A
                                                                         pellentesque sit amet porttitor eget dolor morbi
                                                                         <a target="_blank"
-                                                                            style="font-size: 14px; text-decoration: none; color: #333333;">non
+                                                                            style="font-size: 14px !important; text-decoration: none; color: #333333;">non
                                                                             arcu</a>.<br>
                                                                     </p>
                                                                 </td>
@@ -1175,7 +1182,7 @@
                                                                                     <td align="center"
                                                                                         class="csd-block-text">
                                                                                         <p
-                                                                                            style="font-size: 12px; white-space: nowrap; color: #666666;">
+                                                                                            style="font-size: 12px; color: #666666;">
                                                                                             Quam nulla porttitor massa
                                                                                             id neque. At elementum eu
                                                                                             facilisis sed odio morbi
